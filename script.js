@@ -7,6 +7,11 @@ form.addEventListener("submit", (e) => {
   const surname = document.querySelector("#surname").value;
   const birthdate = document.querySelector("#birthdate").value;
 
+  if (!name || !surname || !birthdate) {
+    alert("Por favor, complete todos los campos.");
+    return;
+  }
+
   const data = {
     name: name,
     surname: surname,
@@ -24,3 +29,4 @@ form.addEventListener("submit", (e) => {
       console.log(data);
     });
 });
+
