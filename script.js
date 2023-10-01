@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
     body: JSON.stringify(data),
   };
 
-  fetch("https://jsonplaceholder.typicode.com/users", options)
+  fetch("info.json", options)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
